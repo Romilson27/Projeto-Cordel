@@ -24,7 +24,7 @@ html, body {
 }
 
 header {
-    background-color: black;
+    background: linear-gradient(to bottom, black, darkgray);
     color: white;
     text-align: center;
 }
@@ -38,6 +38,24 @@ header>h1 {
 
 header>p  {
     padding-bottom: 50px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    padding: 10px 10px;
+    margin: 0px 0px;
+} 
+
+li:hover {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    transition: 0.2s;
 }
 
 a {
@@ -59,6 +77,10 @@ section {
     font-size: 2em;
 }
 
+section>p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -67,12 +89,26 @@ section.normal {
 section.imagem {
     background-color: darkgray;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(72, 71, 71, 0.526);
+}
+
+section#img01 {
+    background-image: url(img/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(img/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 footer {
